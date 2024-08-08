@@ -7,8 +7,8 @@ Not feasible yet: https://github.com/import-js/eslint-plugin-import/issues/2948
 # Bun?
 
 Would be very fast and convenient but...
-- Debugging problems https://github.com/oven-sh/bun/issues?q=is%3Aissue+is%3Aopen+debug
-- Flaky native addon support
+- (as runtime) Debugging problems https://github.com/oven-sh/bun/issues?q=is%3Aissue+is%3Aopen+debug
+- (as package manager) Flaky native addon support
 
 # tsimp
 
