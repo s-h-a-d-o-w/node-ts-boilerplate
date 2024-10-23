@@ -1,8 +1,12 @@
 import ky from "ky";
 
 // Testing ESM-exclusive packages and top-level await support
-const text = ky.get("https://example.com").text();
-console.log(text);
+try {
+  const text = ky.get("https://example.com").text();
+  console.log(text);
+} catch (_) {
+  /* empty */
+}
 
 function pause() {
   return new Promise((resolve) => {

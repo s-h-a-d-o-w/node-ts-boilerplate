@@ -36,6 +36,16 @@ export default tseslint.config(
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/explicit-member-accessibility": "off",
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          args: "all",
+          argsIgnorePattern: "^_",
+          caughtErrors: "all",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+        },
+      ],
 
       "no-unreachable": "off",
       "require-await": "error",
@@ -45,26 +55,3 @@ export default tseslint.config(
   // Always last
   eslintPluginPrettierRecommended,
 );
-
-// module.exports = {
-//   env: { node: true },
-//   parser: "@typescript-eslint/parser",
-//   parserOptions: {
-//     ecmaVersion: "latest",
-//   },
-//   plugins: ["@typescript-eslint"],
-//   extends: [
-//     "plugin:@typescript-eslint/recommended-type-checked",
-//     "plugin:prettier/recommended",
-//   ],
-//   rules: {
-//     "@typescript-eslint/ban-ts-comment": "off",
-//     "@typescript-eslint/explicit-function-return-type": "off",
-//     "@typescript-eslint/explicit-module-boundary-types": "off",
-//     "@typescript-eslint/explicit-member-accessibility": "off",
-//     "@typescript-eslint/no-explicit-any": "off",
-
-//     "no-unreachable": "off",
-//     "require-await": "error",
-//   },
-// };
