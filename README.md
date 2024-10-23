@@ -1,9 +1,5 @@
 My personal, bare minimum boilerplate for node projects.
 
-# ESLint 9?
-
-Not feasible yet: https://github.com/import-js/eslint-plugin-import/issues/2948
-
 # Bun?
 
 Would be very fast and convenient but...
