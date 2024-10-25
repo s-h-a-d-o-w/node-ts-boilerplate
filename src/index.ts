@@ -16,6 +16,7 @@ function pause() {
 
 export function foo() {
   // Should trigger error - typed eslint rules work
+  // eslint-disable-next-line @typescript-eslint/no-floating-promises
   pause();
   return 5;
 }
