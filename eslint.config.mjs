@@ -46,6 +46,8 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/no-unsafe-call": "off",
+      // Seems buggy. (Talk about "error-typed values" that don't have error in their types.)
+      "@typescript-eslint/no-unsafe-member-access": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
