@@ -27,7 +27,9 @@ export default tseslint.config(
   },
 
   eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.recommended,
+  // Maybe they'll work at some point but they seem too buggy at the moment.
+  // ...tseslint.configs.recommendedTypeChecked,
 
   {
     rules: {
@@ -45,9 +47,6 @@ export default tseslint.config(
           },
         },
       ],
-      "@typescript-eslint/no-unsafe-call": "off",
-      // Seems buggy. (Talk about "error-typed values" that don't have error in their types.)
-      "@typescript-eslint/no-unsafe-member-access": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
