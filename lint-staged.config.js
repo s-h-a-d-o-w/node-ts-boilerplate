@@ -1,3 +1,4 @@
 export default {
-  "**/*": "eslint --cache",
+  "**/*.{mjs,js,ts}": "eslint --cache",
+  "**/*.ts": () => "tsc",
 };
