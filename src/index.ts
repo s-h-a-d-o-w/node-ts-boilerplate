@@ -1,9 +1,6 @@
-import ky from "ky";
-
-// Testing ESM-exclusive packages and top-level await support
 try {
-  const text = await ky.get("https://example.com").text();
-  console.log(text);
+  const res = await fetch("https://example.com");
+  console.log(await res.text());
 } catch (_) {
   /* empty */
 }
