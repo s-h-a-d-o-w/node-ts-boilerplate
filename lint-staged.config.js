@@ -1,4 +1,5 @@
 export default {
-  "**/*.{mjs,js,ts}": "eslint --cache --cache-strategy metadata",
-  "**/*.ts": () => "tsgo",
+  "**/*.{mjs,js,ts}": "pnpm lint",
+  "**/*.ts": () => "pnpm typecheck",
+  "**/*": "oxfmt",
 };

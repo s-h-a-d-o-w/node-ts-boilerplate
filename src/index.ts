@@ -1,8 +1,8 @@
 try {
-  const res = await fetch("https://example.com");
+  const res = await fetch("https://www.reuters.com");
   console.log(await res.text());
-} catch (_) {
-  /* empty */
+} catch (error) {
+  console.error(error);
 }
 
 function pause() {
@@ -13,7 +13,7 @@ function pause() {
 
 export function foo() {
   // Should trigger error - typed eslint rules work
-  // eslint-disable-next-line @typescript-eslint/no-floating-promises
+  // oxlint-disable-next-line typescript/no-floating-promises
   pause();
   return 5;
 }
