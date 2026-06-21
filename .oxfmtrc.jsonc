@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "ignorePatterns": [
-    // Don't fight pnpm
-    "pnpm-workspace.yaml",
+    // Don't fight pnpm.
+    "pnpm-workspace.yaml"
   ],
-  // Prettier default
-  "printWidth": 80,
+  // Prettier default. And I like it.
+  "printWidth": 80
 }
