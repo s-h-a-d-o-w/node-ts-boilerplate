@@ -37,21 +37,28 @@
     // Configuring rules
     "typescript/consistent-type-definitions": ["error", "type"],
     "typescript/no-misused-promises": ["error", { "checksVoidReturn": false }],
-    "import/extensions": [
+    "typescript/no-unnecessary-condition": [
       "error",
-      {
-        "ts": "always"
-      }
+      { "allowConstantLoopConditions": true }
     ],
+    "typescript/explicit-member-accessibility": [
+      "error",
+      { "accessibility": "no-public" }
+    ],
+
+    // Worth reconsidering depending on the project
+    "eslint/max-depth": "off",
+    "eslint/no-underscore-dangle": "off",
+    "react/jsx-no-literals": "off",
+
+    // Hopefully, they'll improve it: https://github.com/oxc-project/oxc/discussions/20620
+    "oxc/no-async-endpoint-handlers": "off",
 
     // Disabling rules
     // pedantic
     "react/forbid-component-props": "off", // Might make sense on projects that don't use styled components pattern
-    "unicorn/no-negated-condition": "off",   
+    "unicorn/no-negated-condition": "off",
 
-    // restriction
-    "vitest/require-test-timeout": "off",
-    
     // style
     "eslint/capitalized-comments": "off",
     "eslint/func-style": "off",
@@ -73,9 +80,6 @@
     "import/no-named-export": "off",
     "import/no-nodejs-modules": "off",
     "import/prefer-default-export": "off",
-    "jest/max-expects": "off",
-    "jest/no-hooks": "off",
-    "jest/require-hook": "off",
     "promise/avoid-new": "off",
     "promise/prefer-await-to-callbacks": "off",
     "promise/prefer-await-to-then": "off",
@@ -87,8 +91,6 @@
     "unicorn/no-await-expression-member": "off",
     "unicorn/no-nested-ternary": "off",
     "unicorn/prefer-global-this": "off",
-    "vitest/consistent-test-filename": "off",
-    "vitest/no-importing-vitest-globals": "off",
 
     // suspicious
     "react/react-in-jsx-scope": "off",
@@ -120,12 +122,6 @@
     "import/no-relative-parent-imports": "off",
     "import/unambiguous": "off",
 
-    "jest/no-conditional-in-test": "off",
-    "jest/valid-title": "off",
-    "vitest/no-conditional-in-test": "off",    
-    "vitest/no-focused-tests": "off",    
-    "vitest/valid-title": "off",
-
     "jsx_a11y/no-autofocus": "off",
 
     "oxc/no-async-await": "off",
@@ -150,11 +146,13 @@
     "typescript/strict-void-return": "off",
     "typescript/use-unknown-in-catch-callback-variable": "off",
 
+    "unicorn/max-nested-calls": "off",
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-array-for-each": "off",
     "unicorn/no-array-reduce": "off",
     "unicorn/no-process-exit": "off",
     "unicorn/no-useless-undefined": "off",
+    "unicorn/prefer-import-meta-properties": "off",
     "unicorn/prefer-module": "off"
   },
   "overrides": [
