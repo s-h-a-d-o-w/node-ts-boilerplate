@@ -1,6 +1,8 @@
 import { foo } from "./index.js";
-import { test, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 
-test(foo.name, () => {
-  expect(foo()).toMatchInlineSnapshot(`5`);
+describe(foo, () => {
+  it("works", () => {
+    expect(foo()).toMatchInlineSnapshot(`5`);
+  });
 });
