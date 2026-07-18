@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/s-h-a-d-o-w/devcontainers-features/js-base": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/s-h-a-d-o-w/devcontainers-features/js-base@sha256:d7d6e65d6b494efbd871216141af7b2987573fc5ca9572201d43192e9ee2e63b",
+      "integrity": "sha256:d7d6e65d6b494efbd871216141af7b2987573fc5ca9572201d43192e9ee2e63b"
+    }
+  }
+}
