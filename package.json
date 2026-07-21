@@ -5,13 +5,15 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "lint": "oxlint --report-unused-disable-directives-severity=error",
+    "format": "oxfmt",
+    "lint": "oxlint",
     "start": "node .",
     "test": "vitest",
     "prepare": "husky",
     "typecheck": "tsc"
   },
   "devDependencies": {
+    "@s-h-a-d-o-w/oxlint-config": "^1.1.2",
     "@types/node": "^24.13.2",
     "globals": "^17.6.0",
     "husky": "^9.1.7",

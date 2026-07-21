@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@s-h-a-d-o-w/oxlint-config':
+        specifier: ^1.1.2
+        version: 1.1.2(oxfmt@0.58.0)(oxlint-tsgolint@0.24.0)(oxlint@1.73.0(oxlint-tsgolint@0.24.0))
       '@types/node':
         specifier: ^24.13.2
         version: 24.13.2
@@ -608,6 +611,13 @@ packages:
     resolution: {integrity: sha512-BfzEnDJOt9T8M989/lA37EcJgat01wLRnoi5dQf3QzOH7jzpqTAzdDbVfRljVr5r+jzKqpbHeyOfAaXxAd0PAA==}
     cpu: [x64]
     os: [win32]
+
+  '@s-h-a-d-o-w/oxlint-config@1.1.2':
+    resolution: {integrity: sha512-9TyWgP9vFY7HZxFVVVEbbvVeEs3x0mjKtep7NW1fPjy6fUJ0RwF+P85GlPfyKb929QC9gZ0nSLhMbP9Y+8KNYA==}
+    peerDependencies:
+      oxfmt: '*'
+      oxlint: '*'
+      oxlint-tsgolint: '*'
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -1419,6 +1429,12 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
+
+  '@s-h-a-d-o-w/oxlint-config@1.1.2(oxfmt@0.58.0)(oxlint-tsgolint@0.24.0)(oxlint@1.73.0(oxlint-tsgolint@0.24.0))':
+    dependencies:
+      oxfmt: 0.58.0
+      oxlint: 1.73.0(oxlint-tsgolint@0.24.0)
+      oxlint-tsgolint: 0.24.0
 
   '@standard-schema/spec@1.1.0': {}
 
